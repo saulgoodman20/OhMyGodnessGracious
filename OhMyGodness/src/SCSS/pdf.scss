@@ -1,0 +1,38 @@
+$hover-item: rgb(223, 223, 223);
+$border-left-color: 4px solid rgb(191, 200, 216);
+
+.wrapper{
+    margin-inline: 2.5rem;
+    ul{
+        user-select: none;
+        li{
+            padding-block: 0.3rem;
+            transition: background-color, border 0.1s ease-in-out;
+            cursor: pointer;
+        }
+        li:nth-child(even){
+            background-color: rgb(255, 255, 255)!important;
+            &:hover{
+                background-color: $hover-item!important;
+                border-left: $border-left-color;
+            }
+        }
+        li:nth-child(odd){
+            background-color: rgb(224, 231, 243)!important;
+            &:hover{
+                background-color: $hover-item!important;
+                border-left: $border-left-color;
+            }
+        }
+    }
+}
+
+.lista_p{
+    padding-inline: 0.4rem;
+    
+    background-color: rgb(208, 216, 230);
+
+    border-left: 4px solid rgb(89, 120, 177);
+
+    padding-block: 0.4rem;
+}

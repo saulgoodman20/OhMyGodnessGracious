@@ -1,0 +1,25 @@
+:root{
+    font-weight: 400;
+    font-size: 1.2em;
+}
+
+.active{
+    font-weight: 700;
+}
+
+nav{
+    background-color: rgb(255, 255, 255)!important;
+
+    padding: 0!important;
+    .LogoBrand{
+        padding: 0.7rem;
+    }
+    .currentYear{
+        color: rgb(198, 201, 207);
+        font-weight: 100;
+    }
+    .fixMargin > ul{
+        margin-block: 0.5rem!important;
+        padding: 1rem!important;
+    }
+}

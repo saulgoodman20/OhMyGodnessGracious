@@ -5,19 +5,19 @@ $border-left-color: 4px solid rgb(191, 200, 216);
     margin-inline: 2.5rem;
     ul{
         user-select: none;
-        li{
+        li.hover-styled{
             padding-block: 0.3rem;
             transition: background-color, border 0.1s ease-in-out;
             cursor: pointer;
         }
-        li:nth-child(even){
+        li.hover-styled:nth-child(even){
             background-color: rgb(255, 255, 255)!important;
             &:hover{
                 background-color: $hover-item!important;
                 border-left: $border-left-color;
             }
         }
-        li:nth-child(odd){
+        li.hover-styled:nth-child(odd){
             background-color: rgb(224, 231, 243)!important;
             &:hover{
                 background-color: $hover-item!important;

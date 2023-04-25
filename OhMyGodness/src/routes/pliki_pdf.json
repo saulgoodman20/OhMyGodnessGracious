@@ -1,14 +1,17 @@
 [
     {
         "id": "1",
-        "name": "Lab1"
+        "name": "Lab1",
+        "available": false
     },
     {
         "id": "2",
-        "name": "Lab2"
+        "name": "Lab2",
+        "available": false
     },
     {
         "id": "3",
-        "name": "Lab3"
+        "name": "Lab3",
+        "available": true
     }
 ]

@@ -21,7 +21,7 @@ export default function Nav() {
                 <Navbar.Toggle />
                 <Navbar.Collapse className='fixMargin md:bg-white md:mr-5 bg-slate-500 '>
                     <div>
-                    <NavLink to="/home" className={({ isActive, isPending }) => isActive ? "active" : isPending ? "pending" : ""}>
+                    <NavLink to="/" className={({ isActive, isPending }) => isActive ? "active" : isPending ? "pending" : ""}>
                         Strona główna
                     </NavLink>
                     </div>                

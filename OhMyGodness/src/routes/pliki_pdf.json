@@ -2,26 +2,50 @@
     {
         "id": "1",
         "name": "Lab1",
-        "available": true
+        "available": true,
+        "children":{
+        }
     },
     {
         "id": "2",
         "name": "Lab2",
-        "available": true
+        "available": true,
+        "children":{
+        }
     },
     {
         "id": "3",
         "name": "Lab3",
-        "available": true
+        "available": true,
+        "children":{
+        }
     },
     {
         "id": "4",
         "name": "Lab4",
-        "available": true
+        "available": true,
+        "children":{
+            "childrenid": "1",
+            "childrenname": "Lab4.1",
+            "childrenavailable": true
+        }
     },
     {
         "id": "5",
         "name": "Lab5",
-        "available": true
+        "available": true,
+        "children":
+        [
+            {
+            "childrenid": "1",
+            "childrenname": "Lab5.1",
+            "childrenavailable": true
+            },
+            {
+            "childrenid": "2",
+            "childrenname": "Lab5.2",
+            "childrenavailable": true
+            }
+        ]
     }
 ]

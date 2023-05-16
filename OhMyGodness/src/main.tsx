@@ -4,13 +4,13 @@ import Root from "./routes/root";
 import ErrorPage from "./error-page";
 import Home from './routes/home'
 import PDF from './routes/pdf'
-import Lab3 from './routes/pdf/Lab3'
 
 import {
   createBrowserRouter,
   RouterProvider, createRoutesFromElements, Route
 } from "react-router-dom";
 import './index.css'
+import { CookiesProvider } from 'react-cookie';
 
 // const router = createBrowserRouter([
 //   {
@@ -50,13 +50,14 @@ const router = createBrowserRouter(
     <Route path="/" element={<Root />} errorElement={<ErrorPage />}>,
       <Route index element={<Home />} />,
       <Route path="/pdf" element={<PDF />} />
-      <Route path="/pdf/3" element={<Lab3 />} />
     </Route>
   )
 );
 
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
   <React.StrictMode>
-    <RouterProvider router={router} />
+    <CookiesProvider>
+      <RouterProvider router={router} />
+    </CookiesProvider>
   </React.StrictMode>,
 )

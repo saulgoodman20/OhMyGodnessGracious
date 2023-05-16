@@ -1,0 +1,6 @@
+.tableNames{
+    @media (min-width: 768px){
+        padding-inline: clamp(2rem, 10vw, 20rem);
+    }
+    margin-bottom: 3rem;
+}

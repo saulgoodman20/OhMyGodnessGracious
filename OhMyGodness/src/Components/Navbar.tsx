@@ -1,7 +1,5 @@
 import { Navbar } from 'flowbite-react'
-import { Dropdown } from 'flowbite-react'
 import { NavLink } from 'react-router-dom'
-
 
 export default function Nav() {
     const currentYear: any = new Date().getFullYear();
@@ -20,36 +18,18 @@ export default function Nav() {
                 <span className="currentYear">{currentYear}</span>
                 <Navbar.Toggle />
                 <Navbar.Collapse className='fixMargin md:bg-white md:mr-5 bg-slate-500 '>
+                    {/* <div className='darkMode' onClick={handleDarkmode}>
+                        <FontAwesomeIcon icon={faMoon} />
+                    </div> */}
                     <div>
-                    <NavLink to="/" className={({ isActive, isPending }) => isActive ? "active" : isPending ? "pending" : ""}>
-                        Strona główna
-                    </NavLink>
-                    </div>                
+                        <NavLink to="/" className={({ isActive, isPending }) => isActive ? "active" : isPending ? "pending" : ""}>
+                            Strona główna
+                        </NavLink>
+                    </div>
                     <div>
-                        <Dropdown inline={true} arrowIcon={true} label="PDF-y">
-                            <NavLink to="/pdf/1" className={({ isActive, isPending }) => isActive ? "active" : isPending ? "pending" : ""}>
-                                <Dropdown.Item>
-                                    PDF 1
-                                </Dropdown.Item>
-                            </NavLink>
-                            <Dropdown.Divider />
-
-                            <NavLink to="/pdf/2" className={({ isActive, isPending }) => isActive ? "active" : isPending ? "pending" : ""}>
-
-                                <Dropdown.Item>
-                                    PDF 2
-                                </Dropdown.Item>
-                            </NavLink>
-
-                            <Dropdown.Divider />
-
-                            <NavLink to="/pdf/3" className={({ isActive, isPending }) => isActive ? "active" : isPending ? "pending" : ""}>
-
-                                <Dropdown.Item>
-                                    PDF 3
-                                </Dropdown.Item>
-                            </NavLink>
-                        </Dropdown>
+                        <NavLink to="/pdf" className={({ isActive, isPending }) => isActive ? "active" : isPending ? "pending" : ""}>
+                            Pliki PDF
+                        </NavLink>
                     </div>
                 </Navbar.Collapse>
             </Navbar>

@@ -2,50 +2,102 @@
     {
         "id": "1",
         "name": "Lab1",
+        "desc": "Encje, notacja Barkera",
         "available": true,
         "children":{
+            "available": false
         }
     },
     {
         "id": "2",
         "name": "Lab2",
+        "desc": "SDDM: Dom Mody",
         "available": true,
-        "children":{
-        }
+        "children":[
+            {
+                "id": "1",
+                "name": "Lab2.1",
+                "desc": "Dodatkowe informacje",
+                "available": true
+            },
+            {
+                "id": "2",
+                "name": "Lab2.2",
+                "desc": "Ćwiczenie, utworzenie wzornika",
+                "available": true
+            }
+        ]
     },
     {
         "id": "3",
         "name": "Lab3",
+        "desc": "SDDM: Diagram ERD *(Diagram Związków Encji)* projektu",
         "available": true,
         "children":{
+            "available": false
         }
     },
     {
         "id": "4",
         "name": "Lab4",
+        "desc": "SDDM: Diagram FHD *(Diagram Hierarchii funkcji)* i macierz CRUD",
         "available": true,
         "children":{
-            "childrenid": "1",
-            "childrenname": "Lab4.1",
-            "childrenavailable": true
+            "available": false
         }
     },
     {
         "id": "5",
         "name": "Lab5",
+        "desc": "SDDM: Diagram DFD *(Diagram Przepływu Danych)* projektu",
         "available": true,
-        "children":
-        [
-            {
-            "childrenid": "1",
-            "childrenname": "Lab5.1",
-            "childrenavailable": true
-            },
-            {
-            "childrenid": "2",
-            "childrenname": "Lab5.2",
-            "childrenavailable": true
-            }
-        ]
+        "children":{
+            "available": false
+        }
+    },
+    {
+        "id": "6",
+        "name": "Lab6",
+        "desc": "SDDM: Test przed kolokwium",
+        "available": true,
+        "children":{
+            "available": false
+        }
+    },
+    {
+        "id": "7",
+        "name": "Lab7",
+        "desc": "SDDM: Inżynieria odwrotna",
+        "available": true,
+        "children":{
+            "available": false
+        }
+    },
+    {
+        "id": "8",
+        "name": "Lab8",
+        "desc": "Wykład, pomijamy...",
+        "available": false,
+        "children":{
+            "available": false
+        }
+    },
+    {
+        "id": "9",
+        "name": "Lab9",
+        "desc": "Software Ideas Modeler: DPU *(Diagram Przypadków Użycia)*, DKL *(Diagram Klas)*",
+        "available": true,
+        "children":{
+            "available": false
+        }
+    },
+    {
+        "id": "10",
+        "name": "Lab10",
+        "desc": "Software Ideas Modeler: DAk *(Diagram Aktywności)*",
+        "available": true,
+        "children":{
+            "available": false
+        }
     }
 ]

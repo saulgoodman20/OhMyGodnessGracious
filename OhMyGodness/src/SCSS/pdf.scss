@@ -3,6 +3,7 @@ $border-left-color: 4px solid rgb(191, 200, 216);
 
 .wrapper{
     margin-inline: 2.5rem;
+    margin-block: 2.5rem;
     ul{
         user-select: none;
         li.hover-styled{
@@ -25,10 +26,13 @@ $border-left-color: 4px solid rgb(191, 200, 216);
             }
         }
         li{
+            font-size: 1.1em;
             ul{
                 li.children{
                     transition: background-color, border 0.1s ease-in-out;
                     cursor: pointer;
+                    font-size: 0.9em;
+                    padding-block: 0.3rem;
                     &:hover{
                         background-color: rgba(0, 0, 0, 0.1);
                         border-left: 0.2em solid rgba(0, 0, 0, 0.4)
@@ -47,4 +51,9 @@ $border-left-color: 4px solid rgb(191, 200, 216);
     border-left: 4px solid rgb(89, 120, 177);
 
     padding-block: 0.4rem;
+}
+
+.smaller{
+    font-size: 0.7em;
+    color: rgb(95, 95, 95);
 }

@@ -1,7 +1,11 @@
 import '../SCSS/home.scss';
 import { Card } from 'flowbite-react';
+import {useEffect} from 'react';
 
 export default function Home() {
+    useEffect(() => {
+        document.title = 'Systemy Informatyczne - Pliki PDF';
+    }, []);
     return (
         <>
         <div className='homepage flex flex-col'>

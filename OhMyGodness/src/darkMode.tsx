@@ -1,4 +1,4 @@
-import React, { createContext, useState, useEffect, useContext } from 'react';
+import { createContext, useState, useEffect } from 'react';
 import { useCookies } from 'react-cookie';
 
 export const DarkmodeContext = createContext({

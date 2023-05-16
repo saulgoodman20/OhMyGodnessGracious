@@ -1,6 +1,11 @@
-.tableNames{
+.tableNames{   
     @media (min-width: 768px){
         padding-inline: clamp(2rem, 10vw, 20rem);
     }
     margin-bottom: 3rem;
+    @media (max-width: 363px){
+        .small-width-font{
+            font-size: clamp(0.8em,1.2vw, 1rem);
+        }
+    }
 }

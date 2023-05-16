@@ -48,7 +48,7 @@ export default function Home() {
                                             Natalia Szeliga
                                             </p>
                                         </div>
-                                        <div className="inline-flex items-center text-base font-semibold text-gray-900 dark:text-white">
+                                        <div className="inline-flex items-center text-base font-semibold text-gray-900 dark:text-white small-width-font">
                                             Lab2, Lab2.1, Lab2.2
                                         </div>
                                     </div>

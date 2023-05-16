@@ -6,7 +6,7 @@ import Home from './routes/home'
 import PDF from './routes/pdf'
 
 import {
-  createBrowserRouter,
+  createHashRouter,
   RouterProvider, createRoutesFromElements, Route
 } from "react-router-dom";
 import './index.css'
@@ -45,7 +45,7 @@ import { CookiesProvider } from 'react-cookie';
 //     element: <Lab3 />,
 //   },
 // ]);
-const router = createBrowserRouter(
+const router = createHashRouter(
   createRoutesFromElements(
     <Route path="/" element={<Root />} errorElement={<ErrorPage />}>,
       <Route index element={<Home />} />,

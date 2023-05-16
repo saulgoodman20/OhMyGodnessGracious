@@ -1,3 +1,3 @@
-# OhMyGodnessGracious
-## Nothing special yet.
-### Just work in progress.
+# Systemy Informatyczne - pliki PF
+## Strona internetowa zbudowana w React + Vite
+### Projekt na studia
